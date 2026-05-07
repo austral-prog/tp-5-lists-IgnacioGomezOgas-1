@@ -6,11 +6,14 @@ def list_of_lists(lista_de_listas):
     - Primera lista: solo los primeros 2 elementos
     - Segunda lista: elementos entre el segundo y cuarto
     - Tercera lista: solo los últimos 2 elementos
-
+    fila , columna, ese orden como en matrices
     Args:
         lista_de_listas: Una lista que contiene 3 listas
 
     Returns:
         La lista de listas modificada según las reglas
     """
-    pass  # Reemplazar con tu implementación
+    lista_de_listas[0] =lista_de_listas[0][:2]
+    lista_de_listas[1] =lista_de_listas[1][1:4]
+    lista_de_listas[2] =lista_de_listas[2][-2:]
+    return lista_de_listas
